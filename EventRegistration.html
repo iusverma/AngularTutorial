@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Event Registration</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+    </head>
+
+    <body>
+        <h1>Ayush First Angular Page</h1>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="js/angluar.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery-3.3.1.js"></script>
+       
+        <div ng-app="DemoApp" ng-controller="DemoController">
+            Tutorial Name: <input type="text" ng-model="tutorialName"><br>
+            This tutorial is {{tutorialName}}.
+        </div>
+
+        <script>
+            var app = angular.module('DemoApp',[]);
+
+            app.controller('DemoController', function($scope){
+            $scope.tutorialName = "Angular JS";
+            });
+        </script>
+
+<!--
+        <script>
+            var app = angular.module('DempApp',[]);
+            app.controller('DemoController', function($scope){
+                $scope.tutorialName = "Angular JS";   
+            });
+        </script>
+-->
+    </body>
+</html>
