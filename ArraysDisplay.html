@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="arrays">
+    <head>
+        <meta charset="UTF-8">
+        <title>Event Registration</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="lib/angluar.js"></script>
+        <script src="lib/bootstrap.js"></script>
+        <script src="lib/jquery-3.3.1.js"></script>
+        <script src="js/array.js"></script>
+    </head>
+
+    <body>
+        <h1>Topics</h1>
+
+        <div class="controller">
+            <div ng-controller="ArrayController">
+               <ul>
+                 <!-- topic in TopicNames 
+                      TopicNames is binded to $scope.TopicNames
+                      then each element is assigend to topic
+                      and repeated.
+                  -->
+                 <li ng-repeat="topic in TopicNames">
+                     <!-- all variables inside {{}}, are binded to model in corresponding array.js -->
+                    Topic Name: {{topic.name}}, Duration: {{topic.duration}} 
+                 </li>    
+               </ul> 
+            </div>
+        </div>
+
+    </body>
+</html>
