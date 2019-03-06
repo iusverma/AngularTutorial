@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="MultiApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Event Registration</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="lib/angluar.js"></script>
+        <script src="lib/bootstrap.js"></script>
+        <script src="lib/jquery-3.3.1.js"></script>
+        <script src="js/multipleController.js"></script>
+    </head>
+
+    <body>
+        <h1>Topics</h1>
+
+        <!-- two sepeate controller -->
+        <div class="controller">
+            <div ng-controller="firstController">
+              Name of first controller: {{firstControllerName}}.
+            </div>
+        </div>
+        <div class="controller">
+            <div ng-controller="secondController">
+              Name of second controller: {{secondControllerName}}.
+            </div>
+        </div>
+        
+        <!-- above code can also be written as -->
+        <!-- two sepeate controller inside one div element -->
+        <!--
+        <div class="controller">
+            <div ng-controller="firstController">
+              Name of first controller: {{firstControllerName}}.
+            </div>
+            <div ng-controller="secondController">
+              Name of second controller: {{secondControllerName}}.
+            </div>
+        </div>
+        -->
+
+    </body>
+</html>
