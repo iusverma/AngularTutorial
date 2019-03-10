@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="InputElements">
+    <head>
+        <meta charset="UTF-8">
+        <title>Input ELements</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="lib/angluar.js"></script>
+        <script src="lib/bootstrap.js"></script>
+        <script src="lib/jquery-3.3.1.js"></script>
+        <script src="js/inputElements.js"></script>
+    </head>
+
+    <body>
+        <h1>Input Elements</h1>
+        <div ng-controller="InputController">
+            This page belong to <input type="text" ng-model="pname"><br>
+            Value of above text field: {{pname}}
+            <form>
+                Topic Options<br>
+                <input type="checkbox" ng-model="Topics.Enabled"> Enabled<br>
+                <input type="checkbox" ng-model="Topics.Disabled"> Disabled<br>
+            </form>
+        </div>
+
+    </body>
+</html>
