@@ -18,9 +18,14 @@
             This page belong to <input type="text" ng-model="pname"><br>
             Value of above text field: {{pname}}
             <form>
-                Topic Options<br>
+                Topics<br>
                 <input type="checkbox" ng-model="Topics.Enabled"> Enabled<br>
                 <input type="checkbox" ng-model="Topics.Disabled"> Disabled<br>
+                Options<br>
+                <select ng-model="Options">
+                    <option>{{Options.option1}}</option>
+                    <option>{{Options.option2}}</option>
+                </select>
             </form>
         </div>
 

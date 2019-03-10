@@ -4,5 +4,10 @@ app.controller('InputController', function($scope){
    $scope.Topics = {
        Enabled:true,
        Disabled:true
+
+   };
+   $scope.Options = {
+       option1:"data",
+       option2:"process"
    };
 });
